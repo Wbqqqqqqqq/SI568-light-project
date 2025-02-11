@@ -18,7 +18,7 @@ def get_stock_list():
     except requests.exceptions.RequestException as e:
         print(e)
 
-def get_stock_data(stock_symbol):
+def get_stock_percent_change(stock_symbol):
     """
     This function will return a dictionary of stock data based on the stock symbol
     """
@@ -28,10 +28,7 @@ def get_stock_data(stock_symbol):
     if stock_list:
         for stock in stock_list:
             if stock["symbol"] == stock_symbol:
-                return stock
-            else:
-                print("Stock symbol not found")
-        
-
-apple = get_stock_data("AAPL")
-print(apple)
+                return stock["changesPercentage"]
+            
+stock_percent_change = get_stock_percent_change("PLTR")
+print(stock_percent_change)
