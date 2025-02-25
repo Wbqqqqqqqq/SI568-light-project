@@ -39,3 +39,7 @@ This project realizes a Python application for controlling LEDs to display vario
      - 45° arrow for changes between 0% and 1%
      - -45° arrow for changes between -1% and 0%
      - Down arrow for changes < -1%
+
+### Data Source
+We source real-time stock market data on the Apple Stock from Financial Modeling Prep
+- API Documentation: https://site.financialmodelingprep.com/developer/docs/stable
